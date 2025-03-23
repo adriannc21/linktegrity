@@ -31,6 +31,8 @@ body {
   display: flex;
   padding: 1rem;
   justify-content: space-between;
+  width: 100rem;
+  margin: auto;
 }
 .menu-bar .title-logo {
   display: flex;
@@ -65,4 +67,29 @@ body {
   background-color: red;
   border-radius: 1rem;
   padding: 1rem;
+  width: 100rem;
+  margin: auto;
+}
+
+@media only screen and (max-width: 100rem) { /* 1600px */
+  .menu-bar,
+  .main .content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 75rem) { /* 1200px */
+  /* Estilos para pantallas de hasta 1200px */
+}
+
+@media only screen and (max-width: 62rem) { /* 992px */
+  /* Estilos para pantallas de hasta 992px */
+}
+
+@media only screen and (max-width: 48rem) { /* 768px */
+  /* Estilos para pantallas de hasta 768px */
+}
+
+@media only screen and (max-width: 36rem) { /* 576px */
+  /* Estilos para pantallas de hasta 576px */
 }
