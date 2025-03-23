@@ -72,14 +72,19 @@ body {
   width: 100rem;
   margin: auto;
 }
-.main .content .search{
+.main .content .search {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30rem;
   margin: auto;
 }
-.main .content .search input{
+.main .content .search:hover,
+.main .content .search:focus-within {
+  outline: 0.15rem solid var(--primary);
+  border-radius: 2rem;
+}
+.main .content .search input {
   background-color: var(--white);
   border: none;
   height: 3rem;
@@ -88,7 +93,7 @@ body {
   outline: none;
   border-radius: 2rem 0 0 2rem;
 }
-.main .content .search button{
+.main .content .search button {
   width: 10%;
   background-color: var(--white);
   height: 3rem;
@@ -98,9 +103,10 @@ body {
   padding: 0;
   border-radius: 0 2rem 2rem 0;
 }
-.main .content .search button img{
+.main .content .search button img {
   width: 2.5rem;
   padding-right: 1rem;
+  user-select: none;
 }
 @media only screen and (max-width: 100rem) {
   /* 1600px */
