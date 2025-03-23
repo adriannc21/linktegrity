@@ -3,7 +3,9 @@
 :root {
   --primary: #29a4ff;
   --black: #000000;
+  --blackblue: #38527f;
   --white: #ffffff;
+  --transition: all 0.25s ease-in-out;
 }
 
 *,
@@ -14,15 +16,21 @@
 a {
   text-decoration: none;
 }
-
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+/* menu */
 .menu-bar {
   display: flex;
   padding: 1rem;
+  justify-content: space-between;
 }
 .menu-bar .title-logo {
   display: flex;
@@ -32,4 +40,29 @@ body {
 }
 .menu-bar .title-logo img {
   width: 2rem;
+}
+.menu-bar .donate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0 1rem;
+  transition: var(--transition);
+  cursor: pointer;
+  border: 0.1rem solid var(--black);
+}
+.menu-bar .donate:hover{
+  background-color: var(--white);
+  color: var(--black);
+}
+/* content */
+.main {
+  padding: 1rem;
+}
+.main .content {
+  background-color: red;
+  border-radius: 1rem;
+  padding: 1rem;
 }
