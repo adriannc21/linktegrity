@@ -76,21 +76,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 30rem;
+  margin: auto;
 }
 .main .content .search input{
   background-color: var(--white);
-  border: 0.1rem solid var(--black);
-  height: 2rem;
-  padding: 0 .5rem;
+  border: none;
+  height: 3rem;
+  width: 90%;
+  padding: 0 1rem;
   outline: none;
+  border-radius: 2rem 0 0 2rem;
 }
 .main .content .search button{
+  width: 10%;
   background-color: var(--white);
+  height: 3rem;
   border: none;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 2rem 2rem 0;
 }
 .main .content .search button img{
-  width: 2rem;
+  width: 2.5rem;
+  padding-right: 1rem;
 }
 @media only screen and (max-width: 100rem) {
   /* 1600px */
